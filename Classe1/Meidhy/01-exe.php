@@ -23,7 +23,7 @@ class Chanson
     public int $duree = 0;
 }
 
-// Instanciation 
+// Instanciation 0.2
 $chanson2 = new Chanson();
 // Modification des propriétés publiques 
 $chanson2->titre = 'PHP Anthem';
@@ -35,3 +35,21 @@ echo $chanson2->titre . ' — ' . $chanson2->artiste . ' ('.$chanson2->duree.' s
 
 // affichage via la concaténation pour l'oo (Pour les propriétés)
 echo "$chanson2->titre — $chanson2->artiste ($chanson2->duree secondes) <br>";
+
+
+// Instanciation 0.3
+$chanson3 = new Chanson();
+// Modification des propriétés publiques 
+$chanson3->titre = 'Boucle infinie';
+$chanson3->artiste = 'While Trio';
+$chanson3->duree = '240';
+
+echo "$chanson3->titre — $chanson3->artiste ($chanson3->duree secondes) <br>";
+
+
+// Procédural 0.4
+echo $chanson['titer'];      // tableau, avec une faute
+// OO 
+echo $chanson2->titer;       // objet, avec la même faute
+// Méthode fatale
+$chanson2->afficher();       // cette méthode n'existe pas
