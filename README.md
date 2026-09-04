@@ -41,6 +41,7 @@ Ressources officielles et tutoriels complémentaires :
 - [Manuel PHP — Classes et objets](https://www.php.net/manual/fr/language.oop5.php)
 - [OpenClassrooms — Programmez en orienté objet en PHP](https://openclassrooms.com/fr/courses/1665806-programmez-en-oriente-objet-en-php)
 - [Pierre Giraud — Introduction à la POO](https://www.pierre-giraud.com/php-mysql-apprendre-coder-cours/introduction-programmation-orientee-objet/)
+- [W3schools](https://www.w3schools.com/php/php_oop_what_is.asp)
 
 
 ### 🎮 Les exercices
