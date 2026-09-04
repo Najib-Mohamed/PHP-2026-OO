@@ -1,5 +1,5 @@
 <?php
-// Procédural
+// Procédural 0.1
 // ── Version 1 : avec un tableau (ce que vous savez déjà faire)
 $chanson = [
     'titre' => 'PHP Anthem',
@@ -21,14 +21,28 @@ class Chanson
     public int $duree = 0;
 }
 
-// instanciation
+// instanciation de chanson2 0.2
 $chanson2 = new Chanson();
 // modification des propriétés publiques
 $chanson2->titre = 'PHP Anthem';
 $chanson2->artiste = 'The Coders';
 $chanson2->duree = 210;
 
+// instanciation de chanson3 0.3
+$chanson3 = new Chanson();
+// modification des propriétés publiques
+$chanson3->titre = 'Boucle infinie';
+$chanson3->artiste = 'While Trio';
+$chanson3->duree = 240;
+
 // affichage de ses propriétés publiques avec concaténation habituelle
 echo $chanson2->titre . ' — ' . $chanson2->artiste . ' ('.$chanson2->duree.' secondes)<br>';
 // affichage via la concaténation pour l'OO (pour les propriétées)
-echo "$chanson2->titre — $chanson2->artiste ($chanson2->duree secondes)<br>";
+echo "$chanson3->titre — $chanson3->artiste ($chanson3->duree secondes)<br>";
+
+// procédural 0.4
+echo $chanson['titer'];      // tableau, avec une faute
+// OO
+echo $chanson2->titer;       // objet, avec la même faute
+// Méthode fatale
+$chanson2->afficher();       // cette méthode n'existe pas
