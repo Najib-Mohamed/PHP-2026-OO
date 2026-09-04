@@ -25,5 +25,12 @@ $chanson2 = new Chanson();
 $chanson2->titre = 'PHP Anthem';
 $chanson2->artiste = 'The Coders';
 $chanson2->duree = 210;
+
+$chanson3 = new Chanson();
+// modification des propriétés publiques
+$chanson3->titre = 'Boucle infinie';
+$chanson3->artiste = 'While Trio';
+$chanson3->duree = 240;
 // affichage de ses propriétés publiques
-echo $chanson2->titre . ' — ' . $chanson2->artiste . ' ('.$chanson2->duree.' secondes)'. PHP_EOL;
+echo $chanson2->titre . ' — ' . $chanson2->artiste . ' ('.$chanson2->duree.' secondes)'. '<br>';
+echo $chanson3->titre . ' — ' . $chanson3->artiste . ' ('.$chanson3->duree.' secondes)'.'<br>';
