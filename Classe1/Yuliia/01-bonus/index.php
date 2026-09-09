@@ -6,7 +6,7 @@ require_once "Playlist.php";
 
 // test d'une chanson hors liste
 //$chanson_hors_liste = new Chanson("Stairway To Heaven","Led Zeppelin",483);
-// affichage de celle-ci
+// affichage de celle-ci () grace 
 //echo "$chanson_hors_liste->titre — $chanson_hors_liste->artiste ($chanson_hors_liste->duree secondes)<hr>";
 
 
@@ -16,6 +16,8 @@ $playlist->ajouter(new Chanson('Get Lucky', 'Daft Punk', 248));
 $playlist->ajouter(new Chanson('Redbone', 'Childish Gambino', 327));
 
 $playlist->afficher();
+
+echo "<hr> {$playlist->dureeTotale()}<hr>";
 echo 'Durée totale : ' . $playlist->formaterDuree($playlist->dureeTotale()) . PHP_EOL;
 
 

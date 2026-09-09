@@ -8,9 +8,7 @@ class Chanson
     public string $titre = '',
     public string $artiste = '',
     public int $duree = 0,
-    ){
-
-    }
+    ){}
    
 }
 
